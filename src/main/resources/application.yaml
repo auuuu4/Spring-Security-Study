@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: security-demo
+  security:
+    user:
+      name: user
+      password: 123
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 1234567
+    url: jdbc:mysql://localhost:3306/spring_security?characterEncoding=utf-8&serverTimezone=UTC&&useSSL=false
+server:
+  port: 80
+mybatis-plus:
+#  configuration:
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpler
+  mapper-locations: classpath:mappers/*xml
