@@ -62,6 +62,7 @@ public class DBUserDetailsManager implements UserDetailsService, UserDetailsMana
         if(user == null)
             throw new UsernameNotFoundException(username);
         Collection<GrantedAuthority> authorities = new ArrayList<>();
+//        authorities.add(() -> "USER_LIST");
         return UserDetailBuilder.build(user.getUsername(),user.getPassword(),!user.isEnabled(),false,false,false,authorities);
 
     }

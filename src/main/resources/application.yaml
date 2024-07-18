@@ -5,6 +5,12 @@ spring:
     user:
       name: user
       password: 123
+    oauth2:
+      client:
+        registration:
+          github:
+            client-id: Ov23liA5e5aZvBxuvx38
+            client-secret: 702b6e0ce3ec1467638af343284affbb8f84c698
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root

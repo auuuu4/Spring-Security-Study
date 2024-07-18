@@ -26,6 +26,8 @@ public class UserDetailBuilder {
                 .accountExpired(accountExpired)
                 .credentialsExpired(credentialsExpired)
                 .accountLocked(accountLocked)
+                .authorities(authorities)
+                .roles("ADMIN")
                 .build();
 
     }
